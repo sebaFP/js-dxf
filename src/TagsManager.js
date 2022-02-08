@@ -57,7 +57,9 @@ class TagsManager {
      * @param {Tag[]} tags
      */
     addTags(tags) {
-        this._tags.push(...tags);
+        for (var i = 0; i < tags.length; i++) {
+            this._tags.push(tags[i]);
+        }
     }
 
     /**
